@@ -5,21 +5,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 
 public class NasaAnswer {
-
     private String copyright;
-
     private String date;
-
     private String explanation;
-
     private String hdurl;
-
     private String mediaType;
-
     private String serviceVersion;
-
     private String title;
-
     private String url;
 
     public NasaAnswer(@JsonProperty("copyright") String copyright,
