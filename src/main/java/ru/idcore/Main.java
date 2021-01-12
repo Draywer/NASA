@@ -67,10 +67,11 @@ public class Main {
         NasaAnswer nasaAnswers = MAPPER.readValue(response.getEntity().getContent(), new TypeReference<>() {
         });
 
-        loadImage(Paths.get(new URI(nasaAnswers.getUrl()).
-                        getPath()).
-                        getFileName().
-                        toString(),
+        loadImage(Paths.get(
+                new URI(nasaAnswers.getUrl())
+                        .getPath())
+                        .getFileName()
+                        .toString(),
                 nasaAnswers.getUrl());
     }
 }
